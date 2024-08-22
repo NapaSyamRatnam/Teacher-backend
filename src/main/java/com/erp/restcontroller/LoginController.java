@@ -17,7 +17,7 @@ public class LoginController {
     @Autowired
     private InstituteService instituteService;
 
-    @PostMapping
+    @PostMapping("/Institute")
     public ResponseEntity<Institute> login(@RequestBody LoginInstitute loginInstitute) {
         String email = loginInstitute.getEmail();
         String phoneNo = loginInstitute.getPhoneNo();
